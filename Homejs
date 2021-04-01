@@ -1,0 +1,45 @@
+import React from 'react';
+import './Home.css';
+import Button from '../../components/Button/Button';
+import Card from "../../components/Card/Card";
+import {IconButton} from '@material-ui/core';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
+import Aboutyou from '../Aboutyou/Aboutyou';
+ function Home(){
+     return(
+         <div>
+            <Router>
+              <Switch>
+                <Route path="/aboutyou">
+                  <Aboutyou />
+                </Route>
+                <Route path="/Calendar">
+                  <Calendar />
+                </Route>
+                <Route path="/Home">
+                  <Home />
+                </Route>
+              </Switch>
+          </Router>
+          </div>
+        );
+      }
+
+
+    //  return(
+    //      <div>
+    //          <div>
+    //              <h1>Home Page!</h1>
+    //              <p>Intro to React</p>
+    //              <Button/>
+    //              <Card/>
+    //          </div>
+    //      </div>
+    //  )
+ }
+ export default Home;
