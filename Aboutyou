@@ -1,0 +1,12 @@
+import React from 'react';
+import Button from '../../components/Button/Button';
+import './Aboutyou.css';
+
+function Aboutyou (){
+    return (
+        <div className="Aboutyou">
+           <h2>About You</h2>
+        </div>
+    )
+}
+export default Aboutyou;
